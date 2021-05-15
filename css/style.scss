@@ -459,7 +459,7 @@ html {
     color: #00DCFF;
     font-size: 1.8em;
     font-weight: bold;
-    top: 2.2em;
+    top: 2.6em;
   }
 
   //******************* SERVICE-INFORMATION *********************
@@ -468,7 +468,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 2.5em;
+    margin-top: 2.2em;
 
     @media (min-width: 768px) {
       display: flex;
@@ -526,9 +526,9 @@ html {
           }
 
           p {
-            font-size: 0.5em;
+            font-size: 0.6em;
             color: #D3F3F8;
-            margin-top: -1em;
+            margin-top: -0.5em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -582,9 +582,9 @@ html {
           }
 
           p {
-            font-size: 0.5em;
+            font-size: 0.6em;
             color: #D3F3F8;
-            margin-top: -1em;
+            margin-top: -0.5em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -644,9 +644,9 @@ html {
           }
 
           p {
-            font-size: 0.5em;
+            font-size: 0.6em;
             color: #D3F3F8;
-            margin-top: -1em;
+            margin-top: -0.5em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -700,9 +700,9 @@ html {
           }
 
           p {
-            font-size: 0.5em;
+            font-size: 0.6em;
             color: #D3F3F8;
-            margin-top: -1em;
+            margin-top: -0.5em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -722,7 +722,7 @@ html {
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    top: -1em;
+    top: -1.7em;
 
     @media (min-width:1024px) {
       top: 2.5em;
@@ -732,13 +732,13 @@ html {
       display: flex;
       flex-direction: column;
       color: #00DCFF;
-      font-size: 0.5em;
+      font-size: 0.4em;
     }
 
     span {
       position: relative;
       color: #91effd;
-      font-size: 0.5em;
+      font-size: 0.4em;
       letter-spacing: 0.1em;
     }
 
@@ -856,11 +856,12 @@ html {
       h2 {
         color: #00DCFF;
         font-size: 2em;
+        margin-top: 2em;
       }
 
       h4 {
         color: rgb(218, 229, 255);
-        margin-top: -1em;
+        margin-top: -2em;
       }
 
       p {
@@ -876,7 +877,7 @@ html {
         color: #00DCFF;
         text-align: center;
         font-size: 0.6em;
-        margin-top: 1.5em;
+        margin-top: 1em;
 
         .maps-container {
           position: relative;
@@ -888,5 +889,24 @@ html {
         }
       }
     }
+  }
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5em;
+  background: #1e2729;
+  color: #D3F3F8;
+  margin-top: -2.1em;
+
+  a {
+    text-decoration: none;
+    color: #D3F3F8;
+    font-weight: bold;
   }
 }

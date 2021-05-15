@@ -565,7 +565,7 @@ html {
   color: #00DCFF;
   font-size: 1.8em;
   font-weight: bold;
-  top: 2.2em;
+  top: 2.6em;
 }
 
 .service-information h1 span {
@@ -581,7 +581,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 2.5em;
+  margin-top: 2.2em;
 }
 
 @media (min-width: 768px) {
@@ -675,9 +675,9 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #D3F3F8;
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 768px) {
@@ -749,9 +749,9 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #D3F3F8;
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 768px) {
@@ -834,9 +834,9 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #D3F3F8;
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 768px) {
@@ -908,9 +908,9 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #D3F3F8;
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 768px) {
@@ -935,7 +935,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -1em;
+  top: -1.7em;
 }
 
 @media (min-width: 1024px) {
@@ -953,13 +953,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #00DCFF;
-  font-size: 0.5em;
+  font-size: 0.4em;
 }
 
 .service-information .get-quote-container span {
   position: relative;
   color: #91effd;
-  font-size: 0.5em;
+  font-size: 0.4em;
   letter-spacing: 0.1em;
 }
 
@@ -1114,11 +1114,12 @@ html {
 .contact .contact-text-container .contact-element-group-1 h2 {
   color: #00DCFF;
   font-size: 2em;
+  margin-top: 2em;
 }
 
 .contact .contact-text-container .contact-element-group-1 h4 {
   color: #dae5ff;
-  margin-top: -1em;
+  margin-top: -2em;
 }
 
 .contact .contact-text-container .contact-element-group-1 p {
@@ -1132,7 +1133,7 @@ html {
   color: #00DCFF;
   text-align: center;
   font-size: 0.6em;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .contact .contact-text-container .contact-element-group-2 label .maps-container {
@@ -1143,5 +1144,33 @@ html {
   border-radius: 15px;
   -webkit-box-shadow: 0px 1px 8px 0.1px #000000;
           box-shadow: 0px 1px 8px 0.1px #000000;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.5em;
+  background: #1e2729;
+  color: #D3F3F8;
+  margin-top: -2.1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #D3F3F8;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
