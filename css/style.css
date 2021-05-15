@@ -1033,6 +1033,12 @@ html {
   max-width: 45em;
 }
 
+.about-us p span {
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
 .about-us .call-us-btn {
   position: relative;
   margin-top: 2.5em;
