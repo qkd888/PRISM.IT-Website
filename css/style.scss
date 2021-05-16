@@ -173,7 +173,6 @@ html {
     border: 1px solid #00ddff3a;
     background: #014e5aee;
     width: 100%;
-    padding: 0.1em;
   }
 
   .links:hover {
@@ -239,7 +238,7 @@ html {
       button {
         position: relative;
         margin-top: 2.5em;
-        padding: 0.5em 1.7em;
+        padding: 0.3em 1.5em;
         border-radius: 30px;
         border: 1px solid #00ddff2c;
         background: rgba(193, 211, 255, 0.327);
@@ -460,7 +459,7 @@ html {
     color: #00DCFF;
     font-size: 1.8em;
     font-weight: bold;
-    top: 2.4em;
+    top: 2.6em;
   }
 
   //******************* SERVICE-INFORMATION *********************
@@ -485,19 +484,12 @@ html {
       display: flex;
       flex-direction: column;
 
-      @media (min-width: 480px) {
-        padding: 1.5em;
-      }
-
       .service-information-card-1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        @media (min-width: 480px) {
-          padding: 1.5em;
-        }
+        padding: 0.5em;
 
         .thumb-img-1 {
           display: flex;
@@ -520,11 +512,12 @@ html {
           position: relative;
           display: flex;
           flex-direction: column;
+          padding: 0.5em 1em 0em 0.5em;
           width: 20em;
 
           h2 {
             color: #00DCFF;
-            font-size: 1em;
+            font-size: 0.7em;
             line-height: 1em;
 
             @media (min-width:768px) {
@@ -533,8 +526,7 @@ html {
           }
 
           p {
-            font-size: 1em;
-            line-height: 1em;
+            font-size: 0.6em;
             color: #D3F3F8;
             margin-top: -0.5em;
 
@@ -553,11 +545,7 @@ html {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: -1em;
-
-        @media (min-width: 480px) {
-          padding: 1.5em;
-        }
+        padding: 0.5em;
 
         .thumb-img-2 {
           position: relative;
@@ -580,11 +568,12 @@ html {
           position: relative;
           display: flex;
           flex-direction: column;
+          padding: 0.5em;
           width: 20em;
 
           h2 {
             color: #00DCFF;
-            font-size: 1em;
+            font-size: 0.7em;
             line-height: 1em;
 
             @media (min-width:768px) {
@@ -593,10 +582,9 @@ html {
           }
 
           p {
-            font-size: 1em;
+            font-size: 0.6em;
             color: #D3F3F8;
             margin-top: -0.5em;
-            line-height: 1em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -612,11 +600,6 @@ html {
       position: relative;
       display: flex;
       flex-direction: column;
-      margin-top: -1.1em;
-
-      @media (min-width: 480px) {
-        padding: 1.5em;
-      }
 
       .service-information-card-3 {
         position: relative;
@@ -624,10 +607,7 @@ html {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        @media (min-width: 480px) {
-          padding: 1.5em;
-        }
+        padding: 0.5em;
 
         .thumb-img-3 {
           position: relative;
@@ -650,11 +630,12 @@ html {
           position: relative;
           display: flex;
           flex-direction: column;
+          padding: 0.5em;
           width: 20em;
 
           h2 {
             color: #00DCFF;
-            font-size: 1em;
+            font-size: 0.7em;
             line-height: 1em;
 
             @media (min-width:768px) {
@@ -663,10 +644,9 @@ html {
           }
 
           p {
-            font-size: 1em;
+            font-size: 0.6em;
             color: #D3F3F8;
             margin-top: -0.5em;
-            line-height: 1em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -683,11 +663,7 @@ html {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: -1em;
-
-        @media (min-width: 480px) {
-          padding: 1.5em;
-        }
+        padding: 0.5em;
 
         .thumb-img-4 {
           position: relative;
@@ -710,11 +686,12 @@ html {
           position: relative;
           display: flex;
           flex-direction: column;
+          padding: 0.5em;
           width: 20em;
 
           h2 {
             color: #00DCFF;
-            font-size: 1em;
+            font-size: 0.7em;
             line-height: 1em;
 
             @media (min-width:768px) {
@@ -723,10 +700,9 @@ html {
           }
 
           p {
-            font-size: 1em;
+            font-size: 0.6em;
             color: #D3F3F8;
             margin-top: -0.5em;
-            line-height: 1em;
 
             @media (min-width:768px) {
               font-size: 0.8em;
@@ -757,10 +733,6 @@ html {
       flex-direction: column;
       color: #00DCFF;
       font-size: 0.4em;
-
-      @media (min-width: 320px) {
-        display: none;
-      }
     }
 
     span {
@@ -768,10 +740,6 @@ html {
       color: #91effd;
       font-size: 0.4em;
       letter-spacing: 0.1em;
-
-      @media (min-width: 320px) {
-        display: none;
-      }
     }
 
     a {
@@ -779,14 +747,14 @@ html {
       text-decoration: none;
       font-size: 0.6em;
       margin-top: .5em;
-      padding: 0.5em 1.7em;
+      padding: 0.3em 1.5em;
       border-radius: 30px;
       border: 1px solid #00ddff2c;
       background: rgba(193, 211, 255, 0.327);
       box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.327);
       color: #00dcff;
       transition: all 0.4s ease;
-      margin-top: 1.5em;
+      margin-top: 1em;
     }
 
     a:hover {
@@ -912,7 +880,6 @@ html {
         margin-top: -1em;
         font-size: 0.8em;
         line-height: 1em;
-        text-align: center;
       }
     }
 

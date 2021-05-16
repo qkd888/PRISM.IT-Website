@@ -6,6 +6,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
+
 navToggle.addEventListener("click", () => {
     if (mobileNav.classList.contains("show-mobile-nav")) {
         mobileNav.classList.remove("show-mobile-nav");
@@ -14,7 +15,7 @@ navToggle.addEventListener("click", () => {
     };
 });
 
-window.onclick = (e) => {
+body.onclick = (e) => {
     if (e.target.classList.contains("show-mobile-nav")) {
         e.target.classList.remove("show-mobile-nav");
     };
