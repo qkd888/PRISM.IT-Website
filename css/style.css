@@ -566,7 +566,7 @@ html {
   color: #00DCFF;
   font-size: 1.8em;
   font-weight: bold;
-  bottom: -6.8em;
+  bottom: -4.8em;
 }
 
 .service-information h1 span {
@@ -588,7 +588,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 6.5em;
+  margin-top: 3.5em;
 }
 
 @media (min-width: 480px) {
@@ -632,6 +632,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   top: 3em;
+  padding: 0.5em 0em;
 }
 
 @media (min-width: 480px) {
@@ -733,7 +734,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -3em;
+  top: -2.5em;
 }
 
 @media (min-width: 480px) {
@@ -810,6 +811,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   top: -3.5em;
+  padding: 0.5em 0em;
 }
 
 @media (min-width: 480px) {
@@ -910,7 +912,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -3.5em;
+  top: -2.5em;
 }
 
 @media (min-width: 480px) {
@@ -993,7 +995,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -9.5em;
+  top: -8.5em;
 }
 
 @media (min-width: 480px) {
