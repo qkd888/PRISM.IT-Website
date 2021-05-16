@@ -230,6 +230,7 @@ html {
   border: 1px solid #00ddff3a;
   background: #014e5aee;
   width: 100%;
+  padding: 0.5em;
 }
 
 .mobile-nav .links:hover {
@@ -311,7 +312,7 @@ html {
 .section-1 .text-container a button {
   position: relative;
   margin-top: 2.5em;
-  padding: 0.3em 1.5em;
+  padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -565,11 +566,17 @@ html {
   color: #00DCFF;
   font-size: 1.8em;
   font-weight: bold;
-  top: 2.6em;
+  bottom: -6.8em;
 }
 
 .service-information h1 span {
   color: #D3F3F8;
+}
+
+@media (min-width: 480px) {
+  .service-information h1 {
+    top: 0em;
+  }
 }
 
 .service-information .service-information-cards-container {
@@ -581,7 +588,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 2.2em;
+  margin-top: 6.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container {
+    margin-top: 1em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -589,14 +602,23 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -609,6 +631,13 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  top: 3em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 {
+    top: 0;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 {
@@ -664,8 +693,9 @@ html {
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
@@ -675,9 +705,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
-  font-size: 0.6em;
+  font-size: 0.9em;
+  line-height: 1.2em;
   color: #D3F3F8;
-  margin-top: -0.5em;
+  margin-top: -0.8em;
 }
 
 @media (min-width: 768px) {
@@ -702,6 +733,13 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
+  top: -3em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 {
+    top: 0;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .thumb-img-2 {
@@ -738,8 +776,9 @@ html {
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
@@ -749,9 +788,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-  font-size: 0.6em;
+  font-size: 0.9em;
   color: #D3F3F8;
-  margin-top: -0.5em;
+  margin-top: -0.8em;
+  line-height: 1.2em;
 }
 
 @media (min-width: 768px) {
@@ -769,6 +809,13 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  top: -3.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 {
+    top: 0;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 {
@@ -823,8 +870,9 @@ html {
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
@@ -834,9 +882,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-  font-size: 0.6em;
+  font-size: 0.9em;
+  line-height: 1.2em;
   color: #D3F3F8;
-  margin-top: -0.5em;
+  margin-top: -0.8em;
 }
 
 @media (min-width: 768px) {
@@ -861,6 +910,13 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
+  top: -3.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 {
+    top: 0;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .thumb-img-4 {
@@ -897,8 +953,9 @@ html {
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 768px) {
@@ -908,9 +965,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-  font-size: 0.6em;
+  font-size: 0.9em;
+  line-height: 1.2em;
   color: #D3F3F8;
-  margin-top: -0.5em;
+  margin-top: -0.8em;
 }
 
 @media (min-width: 768px) {
@@ -935,7 +993,19 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -1.7em;
+  top: -9.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .get-quote-container {
+    top: 0em;
+  }
+}
+
+@media (min-width: 768px) {
+  .service-information .get-quote-container {
+    top: 0em;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -956,6 +1026,12 @@ html {
   font-size: 0.4em;
 }
 
+@media (min-width: 320px) {
+  .service-information .get-quote-container small {
+    display: none;
+  }
+}
+
 .service-information .get-quote-container span {
   position: relative;
   color: #91effd;
@@ -963,12 +1039,18 @@ html {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 320px) {
+  .service-information .get-quote-container span {
+    display: none;
+  }
+}
+
 .service-information .get-quote-container a {
   position: relative;
   text-decoration: none;
   font-size: 0.6em;
   margin-top: .5em;
-  padding: 0.3em 1.5em;
+  padding: 0.7em 1.9em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -977,7 +1059,7 @@ html {
   color: #00dcff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 
 .service-information .get-quote-container a:hover {
@@ -1050,7 +1132,7 @@ html {
 .about-us .call-us-btn {
   position: relative;
   margin-top: 2.5em;
-  padding: 0.3em 1.5em;
+  padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -1141,6 +1223,7 @@ html {
   margin-top: -1em;
   font-size: 0.8em;
   line-height: 1em;
+  text-align: center;
 }
 
 .contact .contact-text-container .contact-element-group-2 label {
