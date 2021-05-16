@@ -14,6 +14,12 @@ navToggle.addEventListener("click", () => {
     };
 });
 
+window.onclick = (e) => {
+    if (e.target.classList.contains("show-mobile-nav")) {
+        e.target.classList.remove("show-mobile-nav");
+    };
+};
+
 //********************************************** */
 //************ FLICKETY ************************** */
 

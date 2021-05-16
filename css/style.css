@@ -230,6 +230,7 @@ html {
   border: 1px solid #00ddff3a;
   background: #014e5aee;
   width: 100%;
+  padding: 0.1em;
 }
 
 .mobile-nav .links:hover {
@@ -311,7 +312,7 @@ html {
 .section-1 .text-container a button {
   position: relative;
   margin-top: 2.5em;
-  padding: 0.3em 1.5em;
+  padding: 0.5em 1.7em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -565,7 +566,7 @@ html {
   color: #00DCFF;
   font-size: 1.8em;
   font-weight: bold;
-  top: 2.6em;
+  top: 2.4em;
 }
 
 .service-information h1 span {
@@ -611,6 +612,12 @@ html {
           flex-direction: column;
 }
 
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 {
+    padding: 1.5em;
+  }
+}
+
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,7 +632,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 {
+    padding: 1.5em;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .thumb-img-1 {
@@ -658,13 +670,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5em 1em 0em 0.5em;
   width: 20em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -675,7 +686,8 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
-  font-size: 0.6em;
+  font-size: 1em;
+  line-height: 1em;
   color: #D3F3F8;
   margin-top: -0.5em;
 }
@@ -701,7 +713,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em;
+  margin-top: -1em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 {
+    padding: 1.5em;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .thumb-img-2 {
@@ -732,13 +750,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5em;
   width: 20em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -749,9 +766,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-  font-size: 0.6em;
+  font-size: 1em;
   color: #D3F3F8;
   margin-top: -0.5em;
+  line-height: 1em;
 }
 
 @media (min-width: 768px) {
@@ -769,6 +787,13 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -1.1em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 {
+    padding: 1.5em;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 {
@@ -786,7 +811,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 {
+    padding: 1.5em;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .thumb-img-3 {
@@ -817,13 +847,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5em;
   width: 20em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -834,9 +863,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-  font-size: 0.6em;
+  font-size: 1em;
   color: #D3F3F8;
   margin-top: -0.5em;
+  line-height: 1em;
 }
 
 @media (min-width: 768px) {
@@ -860,7 +890,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5em;
+  margin-top: -1em;
+}
+
+@media (min-width: 480px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 {
+    padding: 1.5em;
+  }
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .thumb-img-4 {
@@ -891,13 +927,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5em;
   width: 20em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
   color: #00DCFF;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1em;
 }
 
@@ -908,9 +943,10 @@ html {
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-  font-size: 0.6em;
+  font-size: 1em;
   color: #D3F3F8;
   margin-top: -0.5em;
+  line-height: 1em;
 }
 
 @media (min-width: 768px) {
@@ -956,6 +992,12 @@ html {
   font-size: 0.4em;
 }
 
+@media (min-width: 320px) {
+  .service-information .get-quote-container small {
+    display: none;
+  }
+}
+
 .service-information .get-quote-container span {
   position: relative;
   color: #91effd;
@@ -963,12 +1005,18 @@ html {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 320px) {
+  .service-information .get-quote-container span {
+    display: none;
+  }
+}
+
 .service-information .get-quote-container a {
   position: relative;
   text-decoration: none;
   font-size: 0.6em;
   margin-top: .5em;
-  padding: 0.3em 1.5em;
+  padding: 0.5em 1.7em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -977,7 +1025,7 @@ html {
   color: #00dcff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .service-information .get-quote-container a:hover {
@@ -987,7 +1035,7 @@ html {
   transition: all 0.4s ease;
   background-color: rgba(151, 96, 252, 0.184);
   border: 0.1px solid rgba(151, 96, 252, 0.116);
-  color: #D3F3F8;
+  color: lime;
 }
 
 .about-us {
@@ -1141,6 +1189,7 @@ html {
   margin-top: -1em;
   font-size: 0.8em;
   line-height: 1em;
+  text-align: center;
 }
 
 .contact .contact-text-container .contact-element-group-2 label {
