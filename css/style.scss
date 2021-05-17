@@ -520,7 +520,6 @@ html {
         padding: 0.5em;
 
         .thumb-img-1 {
-          display: flex;
           background-image: url("../images/thumb-img-1.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -529,6 +528,7 @@ html {
           height: 3em;
           border-radius: 100%;
           margin-right: 0.5em;
+          margin-top: 1em;
 
           @media (min-width: 768px) {
             width: 6em;
