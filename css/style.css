@@ -743,7 +743,7 @@ html {
 
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     width: 22em;
   }
 }
@@ -841,7 +841,7 @@ html {
 
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     width: 21em;
   }
 }
@@ -960,7 +960,7 @@ html {
 
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     width: 21em;
   }
 }
@@ -1058,7 +1058,7 @@ html {
 
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-    font-size: 1.1em;
+    font-size: 1.0em;
     width: 21em;
   }
 }
@@ -1211,7 +1211,7 @@ html {
 
 @media (min-width: 1024px) {
   .about-us p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 
