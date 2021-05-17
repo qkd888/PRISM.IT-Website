@@ -309,6 +309,12 @@ html {
   margin-top: -1em;
 }
 
+@media (min-width: 480px) {
+  .section-1 .text-container small {
+    font-size: 11.8px;
+  }
+}
+
 .section-1 .text-container a button {
   position: relative;
   margin-top: 2.5em;
@@ -579,6 +585,12 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .service-information h1 {
+    font-size: 2em;
+  }
+}
+
 .service-information .service-information-cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,6 +639,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -690,6 +705,7 @@ html {
           flex-direction: column;
   padding: 0.5em 1em 0em 0.5em;
   width: 20em;
+  margin-left: 0.5em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
@@ -705,6 +721,13 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
+    font-size: 1.5em;
+    width: 22em;
+  }
+}
+
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -715,6 +738,13 @@ html {
 @media (min-width: 768px) {
   .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
+    font-size: 1.1em;
+    width: 22em;
   }
 }
 
@@ -773,6 +803,7 @@ html {
           flex-direction: column;
   padding: 0.5em;
   width: 20em;
+  margin-left: 0.5em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
@@ -785,6 +816,13 @@ html {
 @media (min-width: 768px) {
   .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
     font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
+    font-size: 1.5em;
+    width: 22em;
   }
 }
 
@@ -801,11 +839,21 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
+    font-size: 1.1em;
+    width: 21em;
+  }
+}
+
 .service-information .service-information-cards-container .service-information-card-group-2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -817,6 +865,12 @@ html {
 @media (min-width: 480px) {
   .service-information .service-information-cards-container .service-information-card-group-2 {
     top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 {
+    margin-left: 5em;
   }
 }
 
@@ -868,6 +922,7 @@ html {
           flex-direction: column;
   padding: 0.5em;
   width: 20em;
+  margin-left: 0.5em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
@@ -883,6 +938,13 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
+    font-size: 1.5em;
+    width: 22em;
+  }
+}
+
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -893,6 +955,13 @@ html {
 @media (min-width: 768px) {
   .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
+    font-size: 1.1em;
+    width: 21em;
   }
 }
 
@@ -951,6 +1020,7 @@ html {
           flex-direction: column;
   padding: 0.5em;
   width: 20em;
+  margin-left: 0.5em;
 }
 
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
@@ -966,6 +1036,13 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
+    font-size: 1.5em;
+    width: 22em;
+  }
+}
+
 .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
   font-size: 0.9em;
   line-height: 1.2em;
@@ -976,6 +1053,13 @@ html {
 @media (min-width: 768px) {
   .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
+    font-size: 1.1em;
+    width: 21em;
   }
 }
 
@@ -1050,9 +1134,9 @@ html {
 .service-information .get-quote-container a {
   position: relative;
   text-decoration: none;
-  font-size: 0.6em;
+  font-size: 0.8em;
   margin-top: .5em;
-  padding: 0.7em 1.9em;
+  padding: 0.5em 1.4em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
@@ -1123,6 +1207,12 @@ html {
   color: #D3F3F8;
   text-align: center;
   max-width: 45em;
+}
+
+@media (min-width: 1024px) {
+  .about-us p {
+    font-size: 1.1em;
+  }
 }
 
 .about-us p span {

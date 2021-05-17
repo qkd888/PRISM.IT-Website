@@ -232,6 +232,10 @@ html {
       font-size: 9.8px;
       color: rgba(255, 255, 255, 0.878);
       margin-top: -1em;
+
+      @media (min-width:480px) {
+        font-size: 11.8px;
+      }
     }
 
     a {
@@ -465,6 +469,10 @@ html {
     @media (min-width: 480px) {
       top: 0em;
     }
+
+    @media (min-width: 1024px) {
+      font-size: 2em;
+    }
   }
 
   //******************* SERVICE-INFORMATION *********************
@@ -495,6 +503,7 @@ html {
     .service-information-card-group-1 {
       position: relative;
       display: flex;
+      justify-content: space-between;
       flex-direction: column;
       top: 3em;
       padding: 0.5em 0em;
@@ -533,6 +542,7 @@ html {
           flex-direction: column;
           padding: 0.5em 1em 0em 0.5em;
           width: 20em;
+          margin-left: 0.5em;
 
           h2 {
             color: #00DCFF;
@@ -542,6 +552,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 1.2em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.5em;
+              width: 22em;
             }
           }
 
@@ -553,6 +568,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 0.8em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.1em;
+              width: 22em;
             }
           }
         }
@@ -597,6 +617,7 @@ html {
           flex-direction: column;
           padding: 0.5em;
           width: 20em;
+          margin-left: 0.5em;
 
           h2 {
             color: #00DCFF;
@@ -606,6 +627,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 1.2em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.5em;
+              width: 22em;
             }
           }
 
@@ -618,6 +644,11 @@ html {
             @media (min-width:768px) {
               font-size: 0.8em;
             }
+
+            @media (min-width:1024px) {
+              font-size: 1.1em;
+              width: 21em;
+            }
           }
         }
       }
@@ -628,12 +659,17 @@ html {
     .service-information-card-group-2 {
       position: relative;
       display: flex;
+      justify-content: space-between;
       flex-direction: column;
       top: -3.5em;
       padding: 0.5em 0em;
 
       @media (min-width: 480px) {
         top: 0;
+      }
+
+      @media (min-width: 1024px) {
+        margin-left: 5em;
       }
 
       .service-information-card-3 {
@@ -667,6 +703,7 @@ html {
           flex-direction: column;
           padding: 0.5em;
           width: 20em;
+          margin-left: 0.5em;
 
           h2 {
             color: #00DCFF;
@@ -676,6 +713,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 1.2em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.5em;
+              width: 22em;
             }
           }
 
@@ -687,6 +729,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 0.8em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.1em;
+              width: 21em;
             }
           }
         }
@@ -730,6 +777,7 @@ html {
           flex-direction: column;
           padding: 0.5em;
           width: 20em;
+          margin-left: 0.5em;
 
           h2 {
             color: #00DCFF;
@@ -739,6 +787,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 1.2em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.5em;
+              width: 22em;
             }
           }
 
@@ -750,6 +803,11 @@ html {
 
             @media (min-width:768px) {
               font-size: 0.8em;
+            }
+
+            @media (min-width:1024px) {
+              font-size: 1.1em;
+              width: 21em;
             }
           }
         }
@@ -805,9 +863,9 @@ html {
     a {
       position: relative;
       text-decoration: none;
-      font-size: 0.6em;
+      font-size: 0.8em;
       margin-top: .5em;
-      padding: 0.7em 1.9em;
+      padding: 0.5em 1.4em;
       border-radius: 30px;
       border: 1px solid #00ddff2c;
       background: rgba(193, 211, 255, 0.327);
@@ -864,6 +922,11 @@ html {
     color: #D3F3F8;
     text-align: center;
     max-width: 45em;
+
+    @media (min-width:1024px) {
+      font-size: 1.1em;
+
+    }
 
     span {
       font-size: 0.75em;
