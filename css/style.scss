@@ -51,7 +51,7 @@ html {
 
     a {
       text-decoration: none;
-      color: rgb(218, 229, 255);
+      color: rgb(255, 255, 255);
       font-size: 1em;
       transition: all 0.4s ease;
       display: none;
@@ -90,7 +90,6 @@ html {
     border: none;
     transition: all 0.4s ease;
     cursor: pointer;
-    z-index: 1;
 
     @media (min-width:320px) {
       display: flex;
@@ -199,6 +198,8 @@ html {
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
+
+
   // animation: heroGrow 20s ease forwards;
 
   // @keyframes heroGrow {
@@ -238,9 +239,14 @@ html {
     }
 
     small {
-      font-size: 9.8px;
+
       color: rgba(255, 255, 255, 0.878);
       margin-top: -1em;
+      text-align: center;
+      padding: 0 1em;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      margin: .2rem 0 0 0;
 
       @media (min-width:480px) {
         font-size: 11.8px;
@@ -268,7 +274,7 @@ html {
       background-color: rgba(151, 96, 252, 0.327);
       border: 0.1px solid rgba(151, 96, 252, 0.327);
       box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.817);
-      color: rgb(26, 255, 0);
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -896,9 +902,7 @@ html {
       transition: all 0.4s ease;
       background-color: rgba(151, 96, 252, 0.184);
       border: 0.1px solid rgba(151, 96, 252, 0.116);
-      color: rgb(0,
-          255,
-          0);
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -914,24 +918,24 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.47)), url("../images/about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 2em;
-  // animation: heroGrow 20s ease forwards;
+  animation: heroGrow 520s ease forwards;
 
-  // @keyframes heroGrow {
-  //   from {
-  //     background-size: 100%;
-  //   }
+  @keyframes heroGrow {
+    from {
+      background-size: 100%;
+    }
 
-  //   to {
-  //     background-size: 110%;
-  //   }
-  // }
+    to {
+      background-size: 1000%;
+    }
+  }
 
   h1 {
     font-size: 2em;
@@ -980,7 +984,7 @@ html {
   transition: all 0.4s ease;
   background-color: rgba(151, 96, 252, 0.327);
   border: 1px solid rgba(151, 96, 252, 0.327);
-  color: rgb(0, 255, 0);
+  color: rgb(255, 255, 255);
 }
 
 //**************** CONTACT *********************
@@ -1070,7 +1074,7 @@ footer {
 
   a {
     text-decoration: none;
-    color: #D3F3F8;
+    color: #00aaffc6;
     font-weight: bold;
   }
 }
