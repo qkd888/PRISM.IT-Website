@@ -263,6 +263,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 1024px) {
+  .section-1 {
+    background-size: 100%;
+    -webkit-animation: heroGrow 1000s ease forwards;
+            animation: heroGrow 1000s ease forwards;
+  }
+  @-webkit-keyframes heroGrow {
+    from {
+      background-size: 100%;
+    }
+    to {
+      background-size: 1000%;
+    }
+  }
+  @keyframes heroGrow {
+    from {
+      background-size: 100%;
+    }
+    to {
+      background-size: 1000%;
+    }
+  }
+}
+
 .section-1 .text-container {
   position: relative;
   display: -webkit-box;
@@ -1193,8 +1217,8 @@ html {
   width: 100%;
   height: 100vh;
   padding: 2em;
-  -webkit-animation: heroGrow 520s ease forwards;
-          animation: heroGrow 520s ease forwards;
+  -webkit-animation: heroGrow 1000s ease forwards;
+          animation: heroGrow 1000s ease forwards;
 }
 
 @-webkit-keyframes heroGrow {
