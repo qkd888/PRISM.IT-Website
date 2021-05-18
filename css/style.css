@@ -258,14 +258,30 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
-  -webkit-animation: fadeIn;
-          animation: fadeIn;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation: heroGrow 20s ease forwards;
+          animation: heroGrow 20s ease forwards;
+}
+
+@-webkit-keyframes heroGrow {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
+}
+
+@keyframes heroGrow {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
 }
 
 .section-1 .text-container {
@@ -440,6 +456,19 @@ html {
   width: 90%;
   height: 90%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em;
   background: black;
   border-radius: 5px;
@@ -477,12 +506,14 @@ html {
 .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article h1 {
   font-size: 1.1em;
   color: #00d5ffc1;
+  text-align: center;
 }
 
 .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article small {
   color: #ffffffcb;
   font-size: 0.9em;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .our-services .slider-container .main-carousel .flickity-button {
@@ -1129,24 +1160,21 @@ html {
   }
 }
 
-.service-information .get-quote-container a {
+.service-information .get-quote-container a button {
   position: relative;
   text-decoration: none;
   font-size: 0.8em;
   margin-top: .5em;
-  padding: 0.5em 1.4em;
+  padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
   background: rgba(193, 211, 255, 0.327);
-  -webkit-box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.327);
-          box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.327);
-  color: #00dcff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  margin-top: 0em;
+  color: #00d5ff;
 }
 
-.service-information .get-quote-container a:hover {
+.service-information .get-quote-container button:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
@@ -1175,13 +1203,24 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.47)), url("../images/about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 2em;
+  -webkit-animation: heroGrow 20s ease forwards;
+          animation: heroGrow 20s ease forwards;
+}
+
+@keyframes heroGrow {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 110%;
+  }
 }
 
 .about-us h1 {

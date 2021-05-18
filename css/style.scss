@@ -195,12 +195,21 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
-  animation: fadeIn;
-  animation-duration: 2.5s;
+  animation: heroGrow 20s ease forwards;
+
+  @keyframes heroGrow {
+    from {
+      background-size: 100%;
+    }
+
+    to {
+      background-size: 110%;
+    }
+  }
 
   .text-container {
     position: relative;
@@ -338,6 +347,10 @@ html {
               width: 90%;
               height: 90%;
               position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
               padding: 1em;
               background: rgb(0, 0, 0);
               border-radius: 5px;
@@ -375,12 +388,14 @@ html {
               h1 {
                 font-size: 1.1em;
                 color: #00d5ffc1;
+                text-align: center;
               }
 
               small {
                 color: #ffffffcb;
                 font-size: 0.9em;
                 font-family: 'Poppins', sans-serif;
+                text-align: center;
               }
             }
           }
@@ -861,21 +876,22 @@ html {
     }
 
     a {
-      position: relative;
-      text-decoration: none;
-      font-size: 0.8em;
-      margin-top: .5em;
-      padding: 0.5em 1.4em;
-      border-radius: 30px;
-      border: 1px solid #00ddff2c;
-      background: rgba(193, 211, 255, 0.327);
-      box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.327);
-      color: #00dcff;
-      transition: all 0.4s ease;
-      margin-top: 0em;
+      button {
+        position: relative;
+        text-decoration: none;
+        font-size: 0.8em;
+        margin-top: .5em;
+        padding: 0.6em 1.8em;
+        border-radius: 30px;
+        border: 1px solid #00ddff2c;
+        background: rgba(193, 211, 255, 0.327);
+        transition: all 0.4s ease;
+        color: #00d5ff;
+      }
     }
 
-    a:hover {
+
+    button:hover {
       transform: scale(1.04);
       transition: all 0.4s ease;
       background-color: rgba(151, 96, 252, 0.184);
@@ -898,13 +914,24 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.47)), url("../images/about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 2em;
+  animation: heroGrow 20s ease forwards;
+
+  @keyframes heroGrow {
+    from {
+      background-size: 100%;
+    }
+
+    to {
+      background-size: 110%;
+    }
+  }
 
   h1 {
     font-size: 2em;
