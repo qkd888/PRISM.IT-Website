@@ -258,30 +258,10 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
-  -webkit-animation: heroGrow 20s ease forwards;
-          animation: heroGrow 20s ease forwards;
-}
-
-@-webkit-keyframes heroGrow {
-  from {
-    background-size: 100%;
-  }
-  to {
-    background-size: 110%;
-  }
-}
-
-@keyframes heroGrow {
-  from {
-    background-size: 100%;
-  }
-  to {
-    background-size: 110%;
-  }
 }
 
 .section-1 .text-container {
@@ -1203,24 +1183,13 @@ html {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.47)), url("../images/about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 2em;
-  -webkit-animation: heroGrow 20s ease forwards;
-          animation: heroGrow 20s ease forwards;
-}
-
-@keyframes heroGrow {
-  from {
-    background-size: 100%;
-  }
-  to {
-    background-size: 110%;
-  }
 }
 
 .about-us h1 {
