@@ -6,20 +6,20 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
-navToggle.addEventListener("click", () => {
-    window.addEventListener("click", (e) => {
-        e.target !== navToggle && mobileNav.classList.contains("show-mobile-nav") ?
-        mobileNav.classList.remove("show-mobile-nav") : null
+navToggle.addEventListener('click', () => {
+    console.log("working");
+    window.addEventListener('click', (e) => {
+        e.target !== navToggle && mobileNav.classList.contains('show-mobile-nav') ?
+        mobileNav.classList.remove('show-mobile-nav') : null
     })
-    if (
-        mobileNav.classList.contains("show-mobile-nav")) {
-        mobileNav.classList.remove("show-mobile-nav")    
-        } else if (!mobileNav.classList.contains("show-mobile-nav")) {
-            mobileNav.classList.add("show-mobile-nav")
-        } else {
-            null
-        }
-})
+    if (mobileNav.classList.contains('show-mobile-nav')) {
+        mobileNav.classList.remove('show-mobile-nav')
+    } else if (!mobileNav.classList.contains('show-mobile-nav')) {
+        mobileNav.classList.add('show-mobile-nav')
+    } else {
+        null
+    }
+});
 
 //********************************************** */
 //************ FLICKETY ************************** */
@@ -30,19 +30,3 @@ var flkty = new Flickity( elem, {
   cellAlign: 'center',
   contain: true
 });
-
-
-
-// navToggle.addEventListener('click', () => {
-//     window.addEventListener('click', (e) => {
-//         e.target !== navToggle && mobileNav.classList.contains('show-mobile-nav') ?
-//         mobileNav.classList.remove('show-mobile-nav') : null
-//     })
-//     if (mobileNav.classList.contains('show-mobile-nav')) {
-//         mobileNav.classList.remove('show-mobile-nav')
-//     } else if (!mobileNav.classList.contains('show-mobile-nav')) {
-//         mobileNav.classList.add('show-mobile-nav')
-//     } else {
-//         null
-//     }
-// })
