@@ -80,60 +80,81 @@ html {
   .nav-toggle {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 0em;
     background: none;
     width: 4em;
     height: 4em;
-    justify-content: center;
-    align-items: center;
     border: none;
     transition: all 0.4s ease;
     cursor: pointer;
 
-    @media (min-width:320px) {
-      display: flex;
-    }
 
     @media (min-width:480px) {
       display: none;
     }
 
-    .hamburger {
-      display: block;
-      position: relative;
+    .ham {
+      cursor: pointer;
+      transition: transform 400ms;
+      user-select: none;
+      transform: scale(1.3);
     }
 
-    .hamburger,
-    .hamburger::before,
-    .hamburger::after {
-      width: 2em;
-      height: 3px;
-      border-radius: 5px;
-      background: #00DCFF;
-      transform: transform 250ms ease-in-out;
+    .hamRotate.active {
+      transform: rotate(45deg);
     }
 
-    .hamburger::before,
-    .hamburger::after {
+    .hamRotate180.active {
+      transform: rotate(180deg);
+    }
+
+    .line {
+      fill: none;
+      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+      stroke: rgb(255, 255, 255);
+      stroke-width: 3.5;
+      stroke-linecap: round;
+    }
+
+    .ham1 .top {
+      stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+      stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+      stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+      stroke-dashoffset: -138px;
+    }
+
+    /*
+    &:before,
+    &:after {
       content: "";
       position: absolute;
-      left: 0;
+      width: 25px;
+      height: 3px;
+      border-radius: 2px;
+      background: white;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
-    .hamburger::before {
-      bottom: 8px;
-      border-radius: 5px;
+    &:before {
+      top: calc(50% - 8px);
     }
 
-    .hamburger::after {
-      top: 8px;
-      border-radius: 5px;
+    &:after {
+      top: calc(50% + 7px);
     }
-  }
-
-  .nav-toggle:hover {
-    transform: scale(1.09);
-    transition: all 0.4s ease;
+*/
   }
 }
 
