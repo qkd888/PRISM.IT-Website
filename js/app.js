@@ -6,20 +6,20 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
-navToggle.addEventListener('click', () => {
-    console.log("working");
-    window.addEventListener('click', (e) => {
-        e.target !== navToggle && mobileNav.classList.contains('show-mobile-nav') ?
-        mobileNav.classList.remove('show-mobile-nav') : null
-    })
-    if (mobileNav.classList.contains('show-mobile-nav')) {
-        mobileNav.classList.remove('show-mobile-nav')
-    } else if (!mobileNav.classList.contains('show-mobile-nav')) {
-        mobileNav.classList.add('show-mobile-nav')
+// Listen for a click event on the navToggle
+// When navToggle is clicked. - if mobileNav is showing, hide it. if mobileNav is hidden, show it.
+// Listen for a click event on the navToggle & Body
+// Remove show-mobile-nav class when clicked on the navToggle or Body
+
+navToggle.addEventListener("click",() => {
+    if (mobileNav.classList.contains("show-mobile-nav")) {
+        mobileNav.classList.remove("show-mobile-nav")
     } else {
-        null
+        mobileNav.classList.add("show-mobile-nav")
+        document.body.addEventListener("click", () => {
+        })
     }
-});
+})
 
 //********************************************** */
 //************ FLICKETY ************************** */
