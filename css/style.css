@@ -50,6 +50,13 @@ html {
   z-index: 999;
   width: 150px;
   height: 50px;
+  top: 0.5em;
+}
+
+@media (min-width: 480px) {
+  .nav .logo > a > svg {
+    top: 0;
+  }
 }
 
 .nav .nav-links-container {
@@ -126,55 +133,6 @@ html {
   .nav .nav-toggle {
     display: none;
   }
-}
-
-.nav .nav-toggle .ham {
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-.nav .nav-toggle .hamRotate.active {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.nav .nav-toggle .hamRotate180.active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.nav .nav-toggle .line {
-  fill: none;
-  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: white;
-  stroke-width: 3.5;
-  stroke-linecap: round;
-}
-
-.nav .nav-toggle .ham1 .top {
-  stroke-dasharray: 40 139;
-}
-
-.nav .nav-toggle .ham1 .bottom {
-  stroke-dasharray: 40 180;
-}
-
-.nav .nav-toggle .ham1.active .top {
-  stroke-dashoffset: -98px;
-}
-
-.nav .nav-toggle .ham1.active .bottom {
-  stroke-dashoffset: -138px;
 }
 
 .mobile-nav {
@@ -1216,7 +1174,7 @@ html {
 
 @-webkit-keyframes heroGrow {
   from {
-    background-size: 100%;
+    background-size: 200%;
   }
   to {
     background-size: 1000%;
@@ -1225,7 +1183,7 @@ html {
 
 @keyframes heroGrow {
   from {
-    background-size: 100%;
+    background-size: 200%;
   }
   to {
     background-size: 1000%;
