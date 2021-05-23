@@ -191,7 +191,7 @@ html {
   cursor: pointer;
 }
 
-.section-1 {
+section {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,8 +204,7 @@ html {
           align-items: center;
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/hero.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,12 +214,12 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .section-1 {
+  section {
     background-size: 100%;
   }
 }
 
-.section-1 .text-container {
+section article {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,24 +237,24 @@ html {
   line-height: 0.5em;
 }
 
-.section-1 .text-container h1 {
+section article h1 {
   font-weight: bold;
-  font-size: 57px;
+  font-size: 40px;
   color: #00DCFF;
 }
 
-.section-1 .text-container h1 span {
+section article h1 span {
   color: #ffffff;
 }
 
-.section-1 .text-container h4 {
+section article h4 {
   font-size: 18.5px;
   font-style: normal;
   color: rgba(255, 255, 255, 0.769);
   margin-top: -1em;
 }
 
-.section-1 .text-container small {
+section article small {
   color: rgba(255, 255, 255, 0.878);
   margin-top: -1em;
   text-align: center;
@@ -266,12 +265,12 @@ html {
 }
 
 @media (min-width: 480px) {
-  .section-1 .text-container small {
+  section article small {
     font-size: 11.8px;
   }
 }
 
-.section-1 .text-container a button {
+section article a button {
   position: relative;
   margin-top: 2.5em;
   padding: 0.6em 1.8em;
@@ -280,12 +279,12 @@ html {
   background: rgba(193, 211, 255, 0.327);
   -webkit-box-shadow: 0px 1px 8px 0.1px #00ddff4d;
           box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-  color: #00dcff;
+  color: #ffffff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.section-1 .text-container button:hover {
+section article button:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
@@ -328,43 +327,37 @@ html {
   color: #00d5ff;
 }
 
-.our-services .slider-container {
+.our-services > article {
   width: 85%;
   height: 18em;
 }
 
 @media (min-width: 480px) {
-  .our-services .slider-container {
-    width: 55%;
-  }
-}
-
-@media (min-width: 768px) {
-  .our-services .slider-container {
+  .our-services > article {
     width: 55%;
   }
 }
 
 @media (min-width: 1024px) {
-  .our-services .slider-container {
+  .our-services > article {
     width: 85%;
   }
 }
 
-.our-services .slider-container .main-carousel {
+.our-services > article .main-carousel {
   width: 100%;
   padding: 0 1em;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport {
+.our-services > article .main-carousel .flickity-viewport {
   width: 100%;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider {
   width: 100%;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,19 +373,19 @@ html {
 }
 
 @media (min-width: 480px) {
-  .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
+  .our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
     height: 355px;
   }
 }
 
 @media (min-width: 1024px) {
-  .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
+  .our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell {
     width: 35%;
     height: 260px;
   }
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article {
   width: 90%;
   height: 90%;
   position: relative;
@@ -416,7 +409,7 @@ html {
           box-shadow: 0 0 0.9px 1px black;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:before, .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:after {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:before, .our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:after {
   content: "";
   position: absolute;
   width: 2px;
@@ -432,7 +425,7 @@ html {
           box-shadow: 0 0 0.9px 1px rgba(27, 255, 1, 0.572);
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:hover:before, .our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:hover:after {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:hover:before, .our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article:hover:after {
   top: -8px;
   right: -8px;
   width: 20px;
@@ -443,39 +436,39 @@ html {
   z-index: 1;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article h1 {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article h1 {
   font-size: 1.1em;
   color: #00d5ffc1;
   text-align: center;
+  line-height: 1.2em;
 }
 
-.our-services .slider-container .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article small {
+.our-services > article .main-carousel .flickity-viewport .flickity-slider .carousel-cell > article small {
   color: #ffffffcb;
   font-size: 0.9em;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  line-height: 1.2em;
 }
 
-.our-services .slider-container .main-carousel .flickity-button {
+.our-services > article .main-carousel .flickity-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: -2em;
   margin-right: -2em;
   background: #7db2ba6f;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
-.our-services .slider-container .main-carousel .flickity-button:hover {
+.our-services > article .main-carousel .flickity-button:hover {
   background: #8ff0ff6f;
 }
 
-.our-services .slider-container .main-carousel .flickity-page-dots {
+.our-services > article .main-carousel .flickity-page-dots {
   margin-left: -1em;
 }
 
-.our-services a .scroll-arrow-container {
+.our-services a div {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,7 +491,7 @@ html {
   transition: all 0.4s ease;
 }
 
-.our-services a .scroll-arrow-container i {
+.our-services a div i {
   position: relative;
   text-decoration: none;
   color: #1e2729;
@@ -506,9 +499,7 @@ html {
   transition: all 0.3s ease;
 }
 
-.our-services a .scroll-arrow-container:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.our-services a div:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: rgba(151, 96, 252, 0.463);
@@ -535,33 +526,38 @@ html {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #070707), color-stop(200%, #a4a4a4));
   background: linear-gradient(0deg, #070707 25%, #a4a4a4 200%);
   width: 100%;
-  height: 100vh;
+  padding: 0 15%;
+}
+
+@media (min-width: 320px) {
+  .service-information {
+    padding: 0 1%;
+  }
 }
 
 .service-information h1 {
-  margin-top: 1em;
+  top: 1.5em;
   position: relative;
   color: #00DCFF;
   font-size: 1.8em;
   font-weight: bold;
-  bottom: -5.8em;
-}
-
-.service-information h1 span {
-  color: #D3F3F8;
 }
 
 @media (min-width: 480px) {
   .service-information h1 {
-    top: 0.5em;
+    top: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .service-information h1 {
     font-size: 2em;
-    top: 1em;
+    top: 0em;
   }
+}
+
+.service-information h1 span {
+  color: #D3F3F8;
 }
 
 .service-information .service-information-cards-container {
@@ -573,33 +569,59 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-top: 3.5em;
-}
-
-@media (min-width: 480px) {
-  .service-information .service-information-cards-container {
-    margin-top: 1em;
-  }
 }
 
 @media (min-width: 768px) {
   .service-information .service-information-cards-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 60%;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.service-information .service-information-cards-container > div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 .5rem;
+  margin: 2rem 0 0 0;
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(2) {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .service-information .service-information-cards-container > div {
+    margin: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -607,30 +629,7 @@ html {
   }
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  top: 3em;
-  padding: 1em 0em;
-  margin-top: 0.5em;
-}
-
-@media (min-width: 480px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 {
-    top: 0;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 {
+.service-information .service-information-cards-container > div > article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,35 +637,28 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5em;
+  width: 100%;
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .thumb-img-1 {
+.service-information .service-information-cards-container > div > article figure {
   background-image: url("../images/thumb-img-1.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 4em;
-  height: 3em;
+  min-width: 4em;
+  height: 4em;
   border-radius: 100%;
-  margin-right: 0.5em;
-  margin-top: 1em;
+  margin: 0 1rem 0 0;
 }
 
 @media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .thumb-img-1 {
-    width: 6em;
-    height: 6em;
+  .service-information .service-information-cards-container > div > article figure {
+    min-width: 5em;
+    height: 5em;
   }
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container {
+.service-information .service-information-cards-container > div > article > div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,12 +667,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0.5em 1em 0em 0.5em;
-  width: 20em;
-  margin-left: 0.5em;
+  width: 100%;
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
+.service-information .service-information-cards-container > div > article > div h2 {
   color: #00DCFF;
   font-size: 1em;
   line-height: 1em;
@@ -688,18 +678,18 @@ html {
 }
 
 @media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
+  .service-information .service-information-cards-container > div > article > div h2 {
     font-size: 1.2em;
   }
 }
 
 @media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container h2 {
+  .service-information .service-information-cards-container > div > article > div h2 {
     font-size: 1.5em;
   }
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
+.service-information .service-information-cards-container > div > article > div p {
   font-size: 0.7em;
   line-height: 1.2em;
   color: #D3F3F8;
@@ -707,328 +697,18 @@ html {
 }
 
 @media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
+  .service-information .service-information-cards-container > div > article > div p {
     font-size: 0.8em;
   }
 }
 
 @media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-1 .service-information-text-container p {
+  .service-information .service-information-cards-container > div > article > div p {
     font-size: 1.0em;
   }
 }
 
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5em;
-  top: -1.8em;
-}
-
-@media (min-width: 480px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 {
-    top: 0;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .thumb-img-2 {
-  position: relative;
-  background-image: url("../images/thumb-img-2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 4em;
-  height: 3em;
-  border-radius: 100%;
-  margin-right: 0.5em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .thumb-img-2 {
-    width: 6em;
-    height: 6em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0.5em;
-  width: 20em;
-  margin-left: 0.5em;
-}
-
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
-  color: #00DCFF;
-  font-size: 1em;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
-    font-size: 1.2em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 h2 {
-    font-size: 1.5em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-  font-size: 0.7em;
-  color: #D3F3F8;
-  margin-top: -0.8em;
-  line-height: 1.2em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-    font-size: 0.8em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-1 .service-information-card-2 .service-information-text-container-2 p {
-    font-size: 1.0em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  top: -3.5em;
-  padding: 1em 0em;
-  margin-top: 0.5em;
-}
-
-@media (min-width: 480px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 {
-    top: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 {
-    margin-left: 5em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5em;
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .thumb-img-3 {
-  position: relative;
-  background-image: url("../images/thumb-img-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 4em;
-  height: 3em;
-  border-radius: 100%;
-  margin-right: 0.5em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .thumb-img-3 {
-    width: 6em;
-    height: 6em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0.5em;
-  width: 20em;
-  margin-left: 0.5em;
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
-  color: #00DCFF;
-  font-size: 1em;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
-    font-size: 1.2em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 h2 {
-    font-size: 1.5em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-  font-size: 0.7em;
-  line-height: 1.2em;
-  color: #D3F3F8;
-  margin-top: -0.8em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-    font-size: 0.8em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-3 .service-information-text-container-3 p {
-    font-size: 1.0em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1em;
-  top: -2.5em;
-}
-
-@media (min-width: 480px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 {
-    top: 0;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .thumb-img-4 {
-  position: relative;
-  background-image: url("../images/thumb-img-4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 4em;
-  height: 3em;
-  border-radius: 100%;
-  margin-right: 0.5em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .thumb-img-4 {
-    width: 6em;
-    height: 6em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1em 0em;
-  width: 20em;
-  margin-left: 0.5em;
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
-  color: #00DCFF;
-  font-size: 1em;
-  line-height: 1em;
-  margin-bottom: 1em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
-    font-size: 1.2em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 h2 {
-    font-size: 1.5em;
-  }
-}
-
-.service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-  font-size: 0.7em;
-  line-height: 1.2em;
-  color: #D3F3F8;
-  margin-top: -0.8em;
-}
-
-@media (min-width: 768px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-    font-size: 0.8em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .service-information-cards-container .service-information-card-group-2 .service-information-card-4 .service-information-text-container-4 p {
-    font-size: 1.0em;
-  }
-}
-
-.service-information .get-quote-container {
+.service-information > div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,28 +724,9 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
-  top: -8.5em;
 }
 
-@media (min-width: 480px) {
-  .service-information .get-quote-container {
-    top: 0em;
-  }
-}
-
-@media (min-width: 768px) {
-  .service-information .get-quote-container {
-    top: 0em;
-  }
-}
-
-@media (min-width: 1024px) {
-  .service-information .get-quote-container {
-    top: .5em;
-  }
-}
-
-.service-information .get-quote-container small {
+.service-information > div small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,12 +739,12 @@ html {
 }
 
 @media (min-width: 320px) {
-  .service-information .get-quote-container small {
+  .service-information > div small {
     display: none;
   }
 }
 
-.service-information .get-quote-container span {
+.service-information > div span {
   position: relative;
   color: #91effd;
   font-size: 0.4em;
@@ -1091,12 +752,12 @@ html {
 }
 
 @media (min-width: 320px) {
-  .service-information .get-quote-container span {
+  .service-information > div span {
     display: none;
   }
 }
 
-.service-information .get-quote-container a button {
+.service-information > div a button {
   position: relative;
   text-decoration: none;
   font-size: 0.8em;
@@ -1110,7 +771,7 @@ html {
   color: #00d5ff;
 }
 
-.service-information .get-quote-container button:hover {
+.service-information > div button:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
@@ -1151,6 +812,7 @@ html {
 .about-us h1 {
   font-size: 2em;
   color: #00DCFF;
+  top: 0;
 }
 
 .about-us h1 span {
@@ -1183,7 +845,7 @@ html {
   letter-spacing: 1.2px;
 }
 
-.about-us .call-us-btn {
+.about-us button {
   position: relative;
   margin-top: 2.5em;
   padding: 0.6em 1.8em;
@@ -1197,7 +859,7 @@ html {
   transition: all 0.4s ease;
 }
 
-.call-us-btn:hover {
+button:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
@@ -1227,15 +889,13 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 0.5em;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .contact {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1244,35 +904,77 @@ html {
   }
 }
 
-.contact .contact-text-container .contact-element-group-1 {
+.contact article {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .contact article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contact article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: column;
 }
 
-.contact .contact-text-container .contact-element-group-1 h2 {
+@media (min-width: 768px) {
+  .contact article > div {
+    margin-right: 4em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact article > div {
+    margin-right: 4em;
+  }
+}
+
+.contact article > div h2 {
   color: #00DCFF;
   font-size: 2em;
-  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-.contact .contact-text-container .contact-element-group-1 h4 {
+.contact article > div h4 {
   color: #dae5ff;
   margin-top: -2em;
 }
 
-.contact .contact-text-container .contact-element-group-1 p {
+.contact article > div p {
   color: #dae5ff;
   margin-top: -1em;
   font-size: 0.8em;
@@ -1280,18 +982,42 @@ html {
   text-align: center;
 }
 
-.contact .contact-text-container .contact-element-group-2 label {
+.contact article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact article > div label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #00DCFF;
   text-align: center;
   font-size: 0.6em;
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.contact .contact-text-container .contact-element-group-2 label .maps-container {
+.contact article > div > div {
   position: relative;
 }
 
-.contact .contact-text-container .contact-element-group-2 label .maps-container iframe {
+.contact article > div > div iframe {
   border-radius: 15px;
   -webkit-box-shadow: 0px 1px 8px 0.1px #000000;
           box-shadow: 0px 1px 8px 0.1px #000000;

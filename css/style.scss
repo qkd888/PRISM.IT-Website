@@ -147,14 +147,14 @@ html {
 
 //************** HERO ************************
 //********************************************
-.section-1 {
+section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ html {
     background-size: 100%;
   }
 
-  .text-container {
+  article {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ html {
 
     h1 {
       font-weight: bold;
-      font-size: 57px;
+      font-size: 40px;
       color: #00DCFF;
 
       span {
@@ -187,8 +187,7 @@ html {
     h4 {
       font-size: 18.5px;
       font-style: normal;
-      color: rgba(255, 255, 255,
-          0.769);
+      color: rgba(255, 255, 255, 0.769);
       margin-top: -1em;
     }
 
@@ -216,7 +215,7 @@ html {
         border: 1px solid #00ddff2c;
         background: rgba(193, 211, 255, 0.327);
         box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-        color: #00dcff;
+        color: #ffffff;
         transition: all 0.4s ease;
       }
     }
@@ -258,17 +257,16 @@ html {
 
   //*************** SLIDER-CONTAINER *********************
   //*******************************************************
-  .slider-container {
+  >article {
     width: 85%;
     height: 18em;
+
 
     @media (min-width:480px) {
       width: 55%;
     }
 
-    @media (min-width:768px) {
-      width: 55%;
-    }
+
 
     @media (min-width:1024px) {
       width: 85%;
@@ -277,6 +275,7 @@ html {
     .main-carousel {
       width: 100%;
       padding: 0 1em;
+
 
       .flickity-viewport {
         width: 100%;
@@ -348,6 +347,7 @@ html {
                 font-size: 1.1em;
                 color: #00d5ffc1;
                 text-align: center;
+                line-height: 1.2em;
               }
 
               small {
@@ -355,6 +355,7 @@ html {
                 font-size: 0.9em;
                 font-family: 'Poppins', sans-serif;
                 text-align: center;
+                line-height: 1.2em;
               }
             }
           }
@@ -366,7 +367,6 @@ html {
         margin-left: -2em;
         margin-right: -2em;
         background: #7db2ba6f;
-        transition: all 0.5s ease;
       }
 
       .flickity-button:hover {
@@ -382,7 +382,7 @@ html {
   //*********** SCROLL-ARROW *************
   //**************************************
   a {
-    .scroll-arrow-container {
+    div {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -406,8 +406,7 @@ html {
       }
     }
 
-    .scroll-arrow-container:hover {
-      transform: scale(1.1);
+    div:hover {
       transition: all 0.3s ease;
       background: rgba(151, 96, 252, 0.463);
       border: 1px solid rgba(151, 96, 252, 0.327);
@@ -426,12 +425,23 @@ html {
   align-items: center;
   background: linear-gradient(0deg, rgb(7, 7, 7) 25%, rgb(164, 164, 164) 200%);
   width: 100%;
-  height: 100vh;
+  padding: 0 15%;
 
-
+  @media (min-width:320px) {
+    padding: 0 1%;
+  }
 
   h1 {
-    margin-top: 1em;
+    top: 1.5em;
+
+    @media (min-width: 480px) {
+      top: 0;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2em;
+      top: 0em;
+    }
 
     span {
       color: #D3F3F8;
@@ -441,317 +451,70 @@ html {
     color: #00DCFF;
     font-size: 1.8em;
     font-weight: bold;
-    bottom: -5.8em;
-
-    @media (min-width: 480px) {
-      top: 0.5em;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 2em;
-      top: 1em;
-    }
   }
 
-  //******************* SERVICE-INFORMATION *********************
-  //*************************************************************
+  //******************* SERVICE-INFORMATION-CARD-CONTAINER *********************
+  //****************************************************************************
   .service-information-cards-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 3.5em;
-
-    @media (min-width: 480px) {
-      margin-top: 1em;
-    }
 
     @media (min-width: 768px) {
-      display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 100%;
       justify-content: center;
+      align-items: center;
     }
 
     @media (min-width:1024px) {
-      flex-direction: row;
+      flex-direction: column;
     }
 
-    //************ CARD-1 *************
-    //*********************************
-    .service-information-card-group-1 {
+    >div {
       position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
-      top: 3em;
-      padding: 1em 0em;
-      margin-top: 0.5em;
+      padding: 0 .5rem;
+      margin: 2rem 0 0 0;
 
-      @media (min-width: 480px) {
-        top: 0;
+      &:nth-of-type(2) {
+        margin: 0;
       }
 
-      .service-information-card-1 {
+      @media(min-width: 768px) {
+        margin: 0;
+        flex-direction: row;
+      }
+
+      >article {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5em;
+        width: 100%;
 
-        .thumb-img-1 {
+        figure {
           background-image: url("../images/thumb-img-1.jpg");
-          background-position: center;
+          background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
-          width: 4em;
-          height: 3em;
+          min-width: 4em;
+          height: 4em;
           border-radius: 100%;
-          margin-right: 0.5em;
-          margin-top: 1em;
+          margin: 0 1rem 0 0;
 
           @media (min-width: 768px) {
-            width: 6em;
-            height: 6em;
+            min-width: 5em;
+            height: 5em;
           }
         }
 
-        .service-information-text-container {
+        >div {
           position: relative;
           display: flex;
           flex-direction: column;
-          padding: 0.5em 1em 0em 0.5em;
-          width: 20em;
-          margin-left: 0.5em;
-
-          h2 {
-            color: #00DCFF;
-            font-size: 1em;
-            line-height: 1em;
-            margin-bottom: 1em;
-
-            @media (min-width:768px) {
-              font-size: 1.2em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.5em;
-            }
-          }
-
-          p {
-            font-size: 0.7em;
-            line-height: 1.2em;
-            color: #D3F3F8;
-            margin-top: -0.8em;
-
-            @media (min-width:768px) {
-              font-size: 0.8em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.0em;
-            }
-          }
-        }
-      }
-
-      //************ CARD-2 *************
-      //*********************************
-      .service-information-card-2 {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5em;
-        top: -1.8em;
-
-        @media (min-width: 480px) {
-          top: 0;
-        }
-
-
-        .thumb-img-2 {
-          position: relative;
-          background-image: url("../images/thumb-img-2.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 4em;
-          height: 3em;
-          border-radius: 100%;
-          margin-right: 0.5em;
-
-          @media (min-width: 768px) {
-            width: 6em;
-            height: 6em;
-          }
-        }
-
-        .service-information-text-container-2 {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          padding: 0.5em;
-          width: 20em;
-          margin-left: 0.5em;
-
-          h2 {
-            color: #00DCFF;
-            font-size: 1em;
-            line-height: 1em;
-            margin-bottom: 1em;
-
-            @media (min-width:768px) {
-              font-size: 1.2em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.5em;
-            }
-          }
-
-          p {
-            font-size: 0.7em;
-            color: #D3F3F8;
-            margin-top: -0.8em;
-            line-height: 1.2em;
-
-            @media (min-width:768px) {
-              font-size: 0.8em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.0em;
-            }
-          }
-        }
-      }
-    }
-
-    //************ CARD-3 *************
-    //*********************************
-    .service-information-card-group-2 {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      top: -3.5em;
-      padding: 1em 0em;
-      margin-top: 0.5em;
-
-      @media (min-width: 480px) {
-        top: 0;
-      }
-
-      @media (min-width: 1024px) {
-        margin-left: 5em;
-      }
-
-      .service-information-card-3 {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5em;
-
-        .thumb-img-3 {
-          position: relative;
-          background-image: url("../images/thumb-img-3.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 4em;
-          height: 3em;
-          border-radius: 100%;
-          margin-right: 0.5em;
-
-          @media (min-width: 768px) {
-            width: 6em;
-            height: 6em;
-          }
-        }
-
-        .service-information-text-container-3 {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          padding: 0.5em;
-          width: 20em;
-          margin-left: 0.5em;
-
-          h2 {
-            color: #00DCFF;
-            font-size: 1em;
-            line-height: 1em;
-            margin-bottom: 1em;
-
-            @media (min-width:768px) {
-              font-size: 1.2em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.5em;
-            }
-          }
-
-          p {
-            font-size: 0.7em;
-            line-height: 1.2em;
-            color: #D3F3F8;
-            margin-top: -0.8em;
-
-            @media (min-width:768px) {
-              font-size: 0.8em;
-            }
-
-            @media (min-width:1024px) {
-              font-size: 1.0em;
-            }
-          }
-        }
-      }
-
-      //************ CARD-4 *************
-      //*********************************
-      .service-information-card-4 {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 1em;
-        top: -2.5em;
-
-        @media (min-width: 480px) {
-          top: 0;
-        }
-
-        .thumb-img-4 {
-          position: relative;
-          background-image: url("../images/thumb-img-4.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 4em;
-          height: 3em;
-          border-radius: 100%;
-          margin-right: 0.5em;
-
-          @media (min-width: 768px) {
-            width: 6em;
-            height: 6em;
-          }
-        }
-
-        .service-information-text-container-4 {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          padding: 1em 0em;
-          width: 20em;
-          margin-left: 0.5em;
+          width: 100%;
 
           h2 {
             color: #00DCFF;
@@ -789,26 +552,15 @@ html {
 
   //*********** GET-QUOTE **************
   //************************************
-  .get-quote-container {
+  >div {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    top: -8.5em;
 
-    @media (min-width: 480px) {
-      top: 0em;
-    }
 
-    @media (min-width: 768px) {
-      top: 0em;
-    }
-
-    @media (min-width:1024px) {
-      top: .5em;
-    }
 
     small {
       display: flex;
@@ -847,7 +599,6 @@ html {
       }
     }
 
-
     button:hover {
       transform: scale(1.04);
       transition: all 0.4s ease;
@@ -877,11 +628,10 @@ html {
   height: 100vh;
   padding: 2em;
 
-
-
   h1 {
     font-size: 2em;
     color: #00DCFF;
+    top: 0;
 
     span {
       color: #D3F3F8;
@@ -908,7 +658,7 @@ html {
     }
   }
 
-  .call-us-btn {
+  button {
     position: relative;
     margin-top: 2.5em;
     padding: 0.6em 1.8em;
@@ -921,7 +671,7 @@ html {
   }
 }
 
-.call-us-btn:hover {
+button:hover {
   transform: scale(1.04);
   transition: all 0.4s ease;
   background-color: rgba(151, 96, 252, 0.327);
@@ -941,29 +691,47 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   height: 100vh;
   padding: 0.5em;
 
-  @media (min-width:1024px) {
+  @media (min-width:768px) {
     flex-direction: row;
   }
 
-  .contact-text-container {
-    .contact-element-group-1 {
-      position: relative;
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+
+    @media (min-width:768px) {
+      flex-direction: row;
+    }
+
+    >div {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
+      @media (min-width:768px) {
+        margin-right: 4em;
+      }
+
+      @media (min-width:1024px) {
+        margin-right: 4em;
+      }
+
       h2 {
         color: #00DCFF;
         font-size: 2em;
-        margin-top: 2em;
+        margin-bottom: 2em;
       }
 
       h4 {
@@ -980,20 +748,28 @@ html {
       }
     }
 
-    .contact-element-group-2 {
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       label {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         color: #00DCFF;
         text-align: center;
         font-size: 0.6em;
-        margin-top: 1em;
+        margin-bottom: 1em;
+      }
 
-        .maps-container {
-          position: relative;
+      >div {
+        position: relative;
 
-          iframe {
-            border-radius: 15px;
-            box-shadow: 0px 1px 8px 0.1px #000000;
-          }
+        iframe {
+          border-radius: 15px;
+          box-shadow: 0px 1px 8px 0.1px #000000;
         }
       }
     }
