@@ -680,7 +680,7 @@ section article button:hover {
 }
 
 .service-information h1 {
-  top: 1.5em;
+  top: 0em;
   position: relative;
   color: #00DCFF;
   font-size: 1.8em;
@@ -759,10 +759,6 @@ section article button:hover {
   margin: 2rem 0 0 0;
 }
 
-.service-information .service-information-cards-container > div:nth-of-type(2) {
-  margin: 0;
-}
-
 @media (min-width: 768px) {
   .service-information .service-information-cards-container > div {
     margin: 0;
@@ -785,7 +781,6 @@ section article button:hover {
 }
 
 .service-information .service-information-cards-container > div > article figure {
-  background-image: url("../images/thumb-img-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -850,6 +845,30 @@ section article button:hover {
   .service-information .service-information-cards-container > div > article > div p {
     font-size: 1.0em;
   }
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(1) {
+  margin: 0;
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(1) article figure {
+  background-image: url("../images/thumb-img-3.jpg");
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(1) article:nth-of-type(2) figure {
+  background-image: url("../images/thumb-img-2.jpg");
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(2) {
+  margin: 0;
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(2) article figure {
+  background-image: url("../images/thumb-img-1.jpg");
+}
+
+.service-information .service-information-cards-container > div:nth-of-type(2) article:nth-of-type(2) figure {
+  background-image: url("../images/thumb-img-4.jpg");
 }
 
 .service-information > div {
