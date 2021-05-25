@@ -215,7 +215,7 @@ section {
 
 @media (min-width: 1024px) {
   section {
-    background-size: 100%;
+    background-size: cover;
   }
 }
 
@@ -241,35 +241,17 @@ section article h1 {
   font-weight: bold;
   font-size: 40px;
   color: #00DCFF;
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
-@-webkit-keyframes slide-in {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-5em);
-            transform: translateY(-5em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
+@media (min-width: 768px) {
+  section article h1 {
+    font-size: 55px;
   }
 }
 
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-5em);
-            transform: translateY(-5em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
+@media (min-width: 1024px) {
+  section article h1 {
+    font-size: 60px;
   }
 }
 
@@ -282,47 +264,11 @@ section article h4 {
   font-style: normal;
   color: rgba(255, 255, 255, 0.769);
   margin-top: -1em;
-  -webkit-animation-name: slide-in-h4;
-          animation-name: slide-in-h4;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
 }
 
-@-webkit-keyframes slide-in-h4 {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
-    -webkit-transform: translateX(-80em);
-            transform: translateX(-80em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-    -webkit-animation-duration: 0.5s ease;
-            animation-duration: 0.5s ease;
-  }
-}
-
-@keyframes slide-in-h4 {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
-    -webkit-transform: translateX(-80em);
-            transform: translateX(-80em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-    -webkit-animation-duration: 0.5s ease;
-            animation-duration: 0.5s ease;
+@media (min-width: 1024px) {
+  section article h4 {
+    font-size: 20px;
   }
 }
 
@@ -334,49 +280,17 @@ section article small {
   font-size: 0.8rem;
   line-height: 1rem;
   margin: .2rem 0 0 0;
-  -webkit-animation-name: slide-in-small;
-          animation-name: slide-in-small;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-@-webkit-keyframes slide-in-small {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
-    -webkit-transform: translateX(100em);
-            transform: translateX(100em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-  }
-}
-
-@keyframes slide-in-small {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
-    -webkit-transform: translateX(100em);
-            transform: translateX(100em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-  }
 }
 
 @media (min-width: 480px) {
   section article small {
     font-size: 11.8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section article small {
+    font-size: 13.8px;
   }
 }
 
@@ -392,40 +306,6 @@ section article a button {
   color: #ffffff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-animation-name: slide-in-button;
-          animation-name: slide-in-button;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-@-webkit-keyframes slide-in-button {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2000em);
-            transform: translateY(2000em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-  }
-}
-
-@keyframes slide-in-button {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2000em);
-            transform: translateY(2000em);
-  }
-  to {
-    opacity: 10;
-    -webkit-transform: translateY(0em);
-            transform: translateY(0em);
-    -webkit-transform: translateX(0em);
-            transform: translateX(0em);
-  }
 }
 
 section article button:hover {
@@ -433,10 +313,10 @@ section article button:hover {
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background-color: rgba(151, 96, 252, 0.327);
-  border: 0.1px solid rgba(151, 96, 252, 0.327);
-  -webkit-box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.817);
-          box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.817);
+  background-color: rgba(58, 91, 238, 0.327);
+  border: 0.1px solid rgba(58, 91, 238, 0.327);
+  -webkit-box-shadow: 0px 1px 8px 0.1px rgba(62, 89, 243, 0.817);
+          box-shadow: 0px 1px 8px 0.1px rgba(62, 89, 243, 0.817);
   color: white;
 }
 
@@ -465,6 +345,12 @@ section article button:hover {
   font-size: 2em;
   font-weight: bold;
   margin-top: 0em;
+}
+
+@media (min-width: 1024px) {
+  .our-services h1 {
+    font-size: 40px;
+  }
 }
 
 .our-services h1 span {
@@ -852,7 +738,7 @@ section article button:hover {
 }
 
 .service-information .service-information-cards-container > div:nth-of-type(1) article figure {
-  background-image: url("../images/thumb-img-3.jpg");
+  background-image: url("../images/thumb-img-1.jpg");
 }
 
 .service-information .service-information-cards-container > div:nth-of-type(1) article:nth-of-type(2) figure {
@@ -864,7 +750,7 @@ section article button:hover {
 }
 
 .service-information .service-information-cards-container > div:nth-of-type(2) article figure {
-  background-image: url("../images/thumb-img-1.jpg");
+  background-image: url("../images/thumb-img-3.jpg");
 }
 
 .service-information .service-information-cards-container > div:nth-of-type(2) article:nth-of-type(2) figure {
@@ -978,6 +864,12 @@ section article button:hover {
   top: 0;
 }
 
+@media (min-width: 1024px) {
+  .about-us h1 {
+    font-size: 45px;
+  }
+}
+
 .about-us h1 span {
   color: #D3F3F8;
 }
@@ -1027,8 +919,8 @@ button:hover {
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background-color: rgba(151, 96, 252, 0.327);
-  border: 1px solid rgba(151, 96, 252, 0.327);
+  background-color: rgba(36, 65, 230, 0.327);
+  border: 1px solid rgba(36, 65, 230, 0.327);
   color: white;
 }
 

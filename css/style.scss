@@ -163,7 +163,7 @@ section {
   scroll-behavior: smooth;
 
   @media (min-width:1024px) {
-    background-size: 100%;
+    background-size: cover;
   }
 
   article {
@@ -179,19 +179,14 @@ section {
       font-weight: bold;
       font-size: 40px;
       color: #00DCFF;
-      animation-name: slide-in;
-      animation-duration: 2s;
 
-      @keyframes slide-in {
-        from {
-          opacity: 0;
-          transform: translateY(-5em);
-        }
 
-        to {
-          opacity: 10;
-          transform: translateY(0em);
-        }
+      @media (min-width:768px) {
+        font-size: 55px;
+      }
+
+      @media (min-width:1024px) {
+        font-size: 60px;
       }
 
       span {
@@ -204,22 +199,9 @@ section {
       font-style: normal;
       color: rgba(255, 255, 255, 0.769);
       margin-top: -1em;
-      animation-name: slide-in-h4;
-      animation-duration: 2s;
 
-      @keyframes slide-in-h4 {
-        from {
-          opacity: 0;
-          transform: translateY(2em);
-          transform: translateX(-80em);
-        }
-
-        to {
-          opacity: 10;
-          transform: translateY(0em);
-          transform: translateX(0em);
-          animation-duration: 0.5s ease;
-        }
+      @media (min-width: 1024px) {
+        font-size: 20px;
       }
     }
 
@@ -231,25 +213,13 @@ section {
       font-size: 0.8rem;
       line-height: 1rem;
       margin: .2rem 0 0 0;
-      animation-name: slide-in-small;
-      animation-duration: 4s;
-
-      @keyframes slide-in-small {
-        from {
-          opacity: 0;
-          transform: translateY(2em);
-          transform: translateX(100em);
-        }
-
-        to {
-          opacity: 10;
-          transform: translateY(0em);
-          transform: translateX(0em);
-        }
-      }
 
       @media (min-width:480px) {
         font-size: 11.8px;
+      }
+
+      @media (min-width:1024px) {
+        font-size: 13.8px;
       }
     }
 
@@ -265,30 +235,15 @@ section {
         box-shadow: 0px 1px 8px 0.1px #00ddff4d;
         color: #ffffff;
         transition: all 0.4s ease;
-        animation-name: slide-in-button;
-        animation-duration: 5s;
-
-        @keyframes slide-in-button {
-          from {
-            opacity: 0;
-            transform: translateY(2000em);
-          }
-
-          to {
-            opacity: 10;
-            transform: translateY(0em);
-            transform: translateX(0em);
-          }
-        }
       }
     }
 
     button:hover {
       transform: scale(1.04);
       transition: all 0.4s ease;
-      background-color: rgba(151, 96, 252, 0.327);
-      border: 0.1px solid rgba(151, 96, 252, 0.327);
-      box-shadow: 0px 1px 8px 0.1px rgba(151, 96, 252, 0.817);
+      background-color: rgba(58, 91, 238, 0.327);
+      border: 0.1px solid rgba(58, 91, 238, 0.327);
+      box-shadow: 0px 1px 8px 0.1px rgba(62, 89, 243, 0.817);
       color: rgb(255, 255, 255);
     }
   }
@@ -312,6 +267,10 @@ section {
     font-size: 2em;
     font-weight: bold;
     margin-top: 0em;
+
+    @media (min-width:1024px) {
+      font-size: 40px;
+    }
 
     span {
       color: #00d5ff;
@@ -570,8 +529,6 @@ section {
           }
         }
 
-
-
         >div {
           position: relative;
           display: flex;
@@ -616,7 +573,7 @@ section {
         article {
 
           figure {
-            background-image: url("../images/thumb-img-3.jpg");
+            background-image: url("../images/thumb-img-1.jpg");
           }
 
           &:nth-of-type(2) {
@@ -633,7 +590,7 @@ section {
         article {
 
           figure {
-            background-image: url("../images/thumb-img-1.jpg");
+            background-image: url("../images/thumb-img-3.jpg");
           }
 
           &:nth-of-type(2) {
@@ -729,6 +686,10 @@ section {
     color: #00DCFF;
     top: 0;
 
+    @media (min-width:1024px) {
+      font-size: 45px;
+    }
+
     span {
       color: #D3F3F8;
     }
@@ -770,8 +731,8 @@ section {
 button:hover {
   transform: scale(1.04);
   transition: all 0.4s ease;
-  background-color: rgba(151, 96, 252, 0.327);
-  border: 1px solid rgba(151, 96, 252, 0.327);
+  background-color: rgba(36, 65, 230, 0.327);
+  border: 1px solid rgba(36, 65, 230, 0.327);
   color: rgb(255, 255, 255);
 }
 
