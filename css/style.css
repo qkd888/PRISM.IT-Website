@@ -9,6 +9,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  font-size: 1em;
 }
 
 html {
@@ -300,9 +301,9 @@ section article a button {
   padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
-  background: #00ddff68;
-  -webkit-box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-          box-shadow: 0px 1px 8px 0.1px #00ddff4d;
+  background: #00ddff47;
+  -webkit-box-shadow: 0px 1px 8px 0.2px #0000004d;
+          box-shadow: 0px 1px 8px 0.2px #0000004d;
   color: #ffffff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -313,10 +314,10 @@ section article button:hover {
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background: rgba(49, 90, 223, 0.463);
+  background: rgba(114, 196, 255, 0.654);
   border: 0.1px solid rgba(58, 91, 238, 0.327);
-  -webkit-box-shadow: 0px 1px 8px 0.1px rgba(62, 89, 243, 0.817);
-          box-shadow: 0px 1px 8px 0.1px rgba(62, 89, 243, 0.817);
+  -webkit-box-shadow: 0px 1px 8px 0.1px #00000068;
+          box-shadow: 0px 1px 8px 0.1px #00000068;
   color: white;
 }
 
@@ -515,27 +516,44 @@ section article button:hover {
   margin-left: -1em;
   margin-top: 3.9em;
   cursor: pointer;
-  background: rgba(193, 211, 255, 0.327);
+  background: #00ddff47;
+  -webkit-box-shadow: 0px 1px 8px 0.2px #0000004d;
+          box-shadow: 0px 1px 8px 0.2px #0000004d;
   color: #00dcff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .our-services a div i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   text-decoration: none;
-  color: #1e2729;
+  color: #19b9dd;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 100%;
+  padding: 0.5em;
 }
 
 .our-services a div:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: rgba(49, 90, 223, 0.463);
-  border: 1px solid rgba(151, 96, 252, 0.327);
-  -webkit-box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-          box-shadow: 0px 1px 8px 0.1px #00ddff4d;
+  background: rgba(114, 196, 255, 0.654);
+  border: 0.1px solid rgba(58, 91, 238, 0.327);
+  -webkit-box-shadow: 0px 1px 8px 0.1px #00000068;
+          box-shadow: 0px 1px 8px 0.1px #00000068;
+}
+
+.our-services a i:hover {
+  color: white;
 }
 
 .service-information {
@@ -623,6 +641,8 @@ section article button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 5em;
+    margin-left: 1em;
   }
 }
 
@@ -647,7 +667,7 @@ section article button:hover {
 
 @media (min-width: 768px) {
   .service-information .service-information-cards-container > div {
-    margin: 0;
+    margin-left: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -664,6 +684,12 @@ section article button:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .service-information .service-information-cards-container > div > article {
+    margin-left: 3.5em;
+  }
 }
 
 .service-information .service-information-cards-container > div > article figure {
@@ -715,7 +741,6 @@ section article button:hover {
 }
 
 .service-information .service-information-cards-container > div > article > div p {
-  font-size: 0.7em;
   line-height: 1.2em;
   color: #D3F3F8;
   margin-top: -0.8em;
@@ -730,6 +755,7 @@ section article button:hover {
 @media (min-width: 1024px) {
   .service-information .service-information-cards-container > div > article > div p {
     font-size: 1.0em;
+    padding: 0 2em 0 0;
   }
 }
 
@@ -814,7 +840,9 @@ section article button:hover {
   padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
-  background: #00ddff68;
+  background: #00ddff47;
+  -webkit-box-shadow: 0px 1px 8px 0.2px #0000004d;
+          box-shadow: 0px 1px 8px 0.2px #0000004d;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   color: #00d5ff;
@@ -849,8 +877,10 @@ section article button:hover {
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background: rgba(49, 90, 223, 0.463);
-  border: 0.1px solid rgba(151, 96, 252, 0.116);
+  background: rgba(114, 196, 255, 0.654);
+  border: 0.1px solid rgba(58, 91, 238, 0.327);
+  -webkit-box-shadow: 0px 1px 8px 0.1px #00000068;
+          box-shadow: 0px 1px 8px 0.1px #00000068;
   color: white;
 }
 
@@ -898,7 +928,11 @@ section article button:hover {
   color: #D3F3F8;
 }
 
-.about-us p {
+.about-us > div {
+  margin-bottom: 2.5em;
+}
+
+.about-us > div p {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,15 +947,19 @@ section article button:hover {
 }
 
 @media (min-width: 1024px) {
-  .about-us p {
+  .about-us > div p {
     font-size: 1.2em;
   }
 }
 
-.about-us p span {
+.about-us > div p span {
   font-size: 0.75em;
   font-weight: bold;
   letter-spacing: 1.2px;
+}
+
+.about-us > div {
+  position: relative;
 }
 
 .about-us button {
@@ -930,12 +968,12 @@ section article button:hover {
   padding: 0.6em 1.8em;
   border-radius: 30px;
   border: 1px solid #00ddff2c;
-  background: #00ddff68;
-  -webkit-box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-          box-shadow: 0px 1px 8px 0.1px #00ddff4d;
-  color: #00dcff;
+  background: #00ddff47;
+  -webkit-box-shadow: 0px 1px 8px 0.2px #0000004d;
+          box-shadow: 0px 1px 8px 0.2px #0000004d;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  color: #00d5ff;
 }
 
 button:hover {
@@ -943,8 +981,10 @@ button:hover {
           transform: scale(1.04);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background: rgba(49, 90, 223, 0.463);
-  border: 1px solid rgba(36, 65, 230, 0.327);
+  background: rgba(114, 196, 255, 0.654);
+  border: 0.1px solid rgba(58, 91, 238, 0.327);
+  -webkit-box-shadow: 0px 1px 8px 0.1px #00000068;
+          box-shadow: 0px 1px 8px 0.1px #00000068;
   color: white;
 }
 
@@ -1053,12 +1093,30 @@ button:hover {
   margin-top: -2em;
 }
 
-.contact article > div p {
+.contact article > div > a {
   color: #dae5ff;
   margin-top: -1em;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1em;
   text-align: center;
+  text-decoration: none;
+  margin-top: 1em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact article > div > p {
+  color: white;
+  margin-top: 0;
+}
+
+.contact article > div > a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: #00d5ff;
 }
 
 .contact article > div {
