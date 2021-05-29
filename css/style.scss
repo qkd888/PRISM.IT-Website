@@ -871,6 +871,9 @@ button:hover {
 
       >div {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         iframe {
           border-radius: 15px;
